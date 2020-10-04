@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import SkillCard from '../components/skillsCard'
 import frontEnd from '../data/frontend.js'
 import backEnd from '../data/backend.js'
+import languages from '../data/language.js'
+import tools from '../data/Tools.js'
 
 function Skills() {
     return (
@@ -18,6 +20,22 @@ function Skills() {
             <Heading>Backend</Heading>
             <Row>
             {backEnd.map((skill) => {
+                return(
+                    <SkillCard skill={skill}/>
+                )
+            })}
+            </Row>
+            <Heading>Languages</Heading>
+            <Row>
+            {languages.map((skill) => {
+                return(
+                    <SkillCard skill={skill}/>
+                )
+            })}
+            </Row>
+            <Heading>Tools</Heading>
+            <Row>
+            {tools.map((skill) => {
                 return(
                     <SkillCard skill={skill}/>
                 )
