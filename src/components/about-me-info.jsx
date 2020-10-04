@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Icons from './icons'
 
 const AboutInfo = () => {
     return (
@@ -17,6 +18,7 @@ const AboutInfo = () => {
                 <br/><br/>
                 <InfoHighlight>PS: Recruiters HIT ME UP :)</InfoHighlight>
             </Info>
+            <Icons />
         </Wrapper>
     )
 }

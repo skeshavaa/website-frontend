@@ -18,6 +18,7 @@ export default Profile
 const Outer = styled.div`
     width: 300px;
     height: 350px;
+    position: relative;
 `
 
 
@@ -26,8 +27,8 @@ const Inner = styled.div`
     height: 330px;
     width: 250px;
     border: 5px solid white;
-    bottom: 10px;
-    left: 25px;
+    bottom: -10px;
+    left: -25px;
 `
 
 const Image = styled.img`
