@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Navbar = () => {
+    
     return (
         <NavContainer>
             <Items>
-                <Item>About Me</Item>
+                <Item>About</Item>
                 <Item>Skills</Item>
                 <Item>Experience</Item>
                 <Item>Contact</Item>
@@ -21,9 +22,10 @@ const NavContainer = styled.div`
     height: 70px;
     color: white;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     justify-content: flex-end;
     align-content: center;
+    @import "wealthsimple-fabric/scss/fabric";
 `
 
 const Items = styled.div`
@@ -31,8 +33,8 @@ const Items = styled.div`
 `
 
 const Item = styled.h1`
-    font-size: 25px;
+    font-size: 15px;
     color: white;
-    padding: 10px 10px 10px 10px;
-    font-weight: bold;
+    padding: 20px 20px 20px 10px;
+    font-family: "Montserrat", 'sans-serif';
 `
