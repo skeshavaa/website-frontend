@@ -36,6 +36,7 @@ const Heading = styled.h1`
     font-size: 20px;
     color: white;
     font-weight: lighter;
+    text-align: center;
 `
 
 const Sub = styled.h1`
@@ -43,4 +44,5 @@ const Sub = styled.h1`
     font-size: 15px;
     color: white;
     font-weight: lighter;
+    text-align: center;
 `

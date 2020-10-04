@@ -5,7 +5,6 @@ import material from '../images/material.png'
 import react from '../images/react.png'
 import vue from '../images/vue.png'
 
-
 const frontEnd = [
     {
         name: 'React',

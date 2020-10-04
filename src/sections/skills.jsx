@@ -2,12 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 import SkillCard from '../components/skillsCard'
 import frontEnd from '../data/frontend.js'
+import backEnd from '../data/backend.js'
 
 function Skills() {
     return (
         <Wrapper>
+            <Heading>Frontend</Heading>
             <Row>
             {frontEnd.map((skill) => {
+                return(
+                    <SkillCard skill={skill}/>
+                )
+            })}
+            </Row>
+            <Heading>Backend</Heading>
+            <Row>
+            {backEnd.map((skill) => {
                 return(
                     <SkillCard skill={skill}/>
                 )
@@ -21,11 +31,18 @@ export default Skills
 
 
 const Wrapper = styled.div`
-    height: 60vh;
     background: #131313;
+    padding: 25px;
 `
 
 const Row = styled.div`
     display: flex;
     flex-wrap: wrap;
+`
+
+const Heading = styled.div`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
 `
