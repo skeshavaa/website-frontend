@@ -7,44 +7,27 @@ import LaunchIcon from '@material-ui/icons/Launch'
 import '../general.scss'
 
 
-const ProjectCard = (props) => {
+const ExperienceCard = (props) => {
 
     return (
         <OuterWrapper>
-            <Card hoverable style={{padding: '0px'}} className="nopadd">
+            <Card hoverable style={{padding: '0px'}} className="nopad">
             <ProjectWrapper>
                 <ImageWrapper>
-                    <Image src={props.project.image[0]} />
+                    <Image src={props.experience.image[0]} />
+                    <DetailWrapper>
+                        <Title>Royal Bank of Canada</Title>
+                        <Description>Backend Developer</Description>
+                    </DetailWrapper>
                 </ImageWrapper>
-                <Container>
-                    <Title>{props.project.name}</Title>
-                    <Description>{props.project.desc}</Description>
-                </Container>
-                <TagsContainer>
-                    {props.project.tags.map((tag) => {
-                        return (
-                            <Tag>{tag}</Tag>
-                        )
-                    })}
-                </TagsContainer>
-                <ButtonContainer>
-                    <ButtonGroup variant="outlined">
-                        <IconButton href={props.project.code} target="_blank" variant="outlined"><GitHubIcon color={'white'}/></IconButton>
-                        <IconButton href={props.project.project} target="_blank" variant="outlined"><LaunchIcon /></IconButton>
-                    </ButtonGroup>
-                </ButtonContainer>
+                
             </ProjectWrapper>
         </Card>
         </OuterWrapper>
     )
 }
 
-export default ProjectCard
-
-// const Card = styled.div`
-//     border: 2px solid lightgrey;
-//     border-radius: 10px;
-// `
+export default ExperienceCard
 
 const OuterWrapper = styled.div`
     margin: 15px 20px 15px 20px; 
@@ -65,13 +48,24 @@ const ImageWrapper = styled.div`
     max-width: 600px;
     min-height: 100px;
     max-height: 200px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const DetailWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 `
 
 const Image = styled.img`
     min-width: 200px;
-    max-width: 600px;
-    min-height: 100px;
-    max-height: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 600px;
     object-fit: cover;  
     width: 100%;
 `
@@ -111,15 +105,4 @@ const Tag = styled.a`
     font-size: 15px;
     font-family: "Montserrat";
     color: white;
-`
-
-const ButtonContainer = styled.div`
-    margin-left: 25px;
-    margin-right: 25px;
-    display: flex;
-    align-self: flex-end;
-    justify-content: space-between;
-    margin-top: auto;
-    margin-bottom: 25px;
-    padding-top: 25px;
 `

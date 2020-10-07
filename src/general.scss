@@ -2,4 +2,21 @@
     .ant-card-body{
       padding: 0px;
     }
+
+    
+    background: #262424;
+    border: 1px solid #1f1f1f;
   }
+
+  .MuiSvgIcon-root{
+    color: white;
+  }
+
+
+.nopad{
+  .ant-card-body{
+    padding: 0px;
+  }
+  background: #262424;
+  border: 1px solid #1f1f1f;
+}
