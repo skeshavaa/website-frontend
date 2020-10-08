@@ -20,15 +20,26 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 140px;
+    max-width: 140px;
+    min-width: 100px;
     background-color: #262424;
     margin: 20px;
+    @media (max-width: 420px) {
+        margin: 10px;
+    }
+    @media (max-width: 370px) {
+        width: 100px;
+    }
 `
 
 const Image = styled.img`
     width: 120px;
     height: 120px;
     margin: 10px;
+    @media (max-width: 370px) {
+        width: 90px;
+        height: 90px;
+    }
 `
 
 const Heading = styled.h1`

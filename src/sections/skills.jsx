@@ -64,4 +64,7 @@ const Heading = styled.div`
     font-size: 30px;
     color: white;
     padding-left: 20px;
+    @media (max-width: 420px) {
+        padding-left: 10px;
+    }
 `

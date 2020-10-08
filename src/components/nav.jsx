@@ -28,6 +28,10 @@ const NavContainer = styled.div`
     position: sticky;
     top: 0;
     z-index: 5;
+    @media (max-width: 490px) {
+        justify-content: center;
+        height: 50px;
+    }
 `
 
 const Items = styled.div`
@@ -37,6 +41,9 @@ const Items = styled.div`
 const Item = styled.a`
     font-size: 15px;
     color: white;
-    padding: 20px 20px 20px 10px;
+    padding: 20px;
     font-family: "Montserrat", 'sans-serif';
+    @media (max-width: 490px) {
+        padding: 10px;
+    }
 `

@@ -26,8 +26,11 @@ const AboutInfo = () => {
 export default AboutInfo
 
 const Wrapper = styled.div`
-    width: 50%;
     height: auto;
+    @media (max-width: 1070px) {
+        margin-top: 20px;
+        width: 100%;
+    }
 `
 
 const Header = styled.h1`

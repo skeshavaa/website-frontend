@@ -19,6 +19,10 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+    width: 100%;
+    @media (max-width: 490px) {
+        padding-left: 20px;
+    }
 `
 
 const HeadingOne = styled.h1`

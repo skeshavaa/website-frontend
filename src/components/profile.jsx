@@ -16,9 +16,17 @@ const Profile = () => {
 export default Profile
 
 const Outer = styled.div`
-    width: 300px;
+    width: 350px;
     height: 350px;
     position: relative;
+    @media (max-width: 1070px) {
+        margin-left: 60px;
+    }
+    @media (max-width: 450px) {
+        margin-left: 0px;
+        width: 200px;
+        margin-right: 15px;
+    }
 `
 
 

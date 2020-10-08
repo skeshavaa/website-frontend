@@ -23,5 +23,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 70px;    
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
 `

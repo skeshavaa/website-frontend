@@ -53,7 +53,6 @@ const ExperienceWrapper = styled.div`
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding-bottom: 20px;
 `
 
@@ -62,24 +61,29 @@ const ImageWrapper = styled.div`
     min-width: 200px;
     max-width: 600px;
     min-height: 100px;
-    max-height: 200px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    @media (max-width: 485px) {
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 const DetailWrapper = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
 `
 
 const Image = styled.img`
-    min-width: 200px;
+    min-width: 100px;
     max-width: 200px;
-    min-height: 200px;
-    max-height: 600px;
+    min-height: 100px;
+    max-height: 200px;
     object-fit: cover;  
     width: 100%;
 `
@@ -116,10 +120,6 @@ const Li = styled.p`
     font-size: 15px;
     color: white;
     padding-bottom: 5px;
-`
-
-const Container = styled.div`
-    padding: 25px;
 `
 
 const TagsContainer = styled.div`
