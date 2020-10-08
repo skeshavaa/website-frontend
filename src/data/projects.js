@@ -5,7 +5,7 @@ import shell from '../images/shell.png'
 
 const projects = [
     {
-        name: 'Migrant Moments',
+        name: 'Stories of Canadian Immigrants',
         desc: 'Built a blog to showcase the challenges and stories of Canadian Immigrants. In collaboration with Professor Azhar from Seneca College',
         tags: [
             'React',
@@ -14,7 +14,9 @@ const projects = [
             'Contenful CMS',
             'Algolia'
         ],
-        image: [migrant]
+        image: [migrant],
+        code: 'https://github.com/skeshavaa/Pear-Impact-Project',
+        project: 'https://canadian-immigrants.netlify.app/'
     }, 
     {
         name: 'Hyred',
@@ -24,7 +26,9 @@ const projects = [
             'Firebase',
             'Firestore',
         ],
-        image: [hyred]
+        image: [hyred],
+        code: 'https://github.com/dart-dinosaurs/hyred',
+        project: ''
     },
     {
         name: 'Java Mock Shell',
@@ -33,7 +37,8 @@ const projects = [
             'Java',
             'JUnit',
         ],
-        image: [shell]
+        image: [shell],
+        code:  'https://github.com/ShawnGeorge03/CSCB07-MockShell'
     },
     {
         name: 'Homesplit',
@@ -43,7 +48,9 @@ const projects = [
             'Firebase',
             'Redux'
         ],
-        image: [homesplit]
+        image: [homesplit],
+        code: 'https://github.com/skeshavaa/Homesplit',
+        project: 'https://homesplit-abb79.web.app/signin'
     },
 ]
 
