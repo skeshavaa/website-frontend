@@ -25,7 +25,6 @@ const OuterWrapper = styled.div`
     width: 100%;
     padding: 20px;
     background-color: #131313;
-    height: 60vh;
 `
 
 const Heading = styled.div`

@@ -12,16 +12,30 @@ const ExperienceCard = (props) => {
     return (
         <OuterWrapper>
             <Card hoverable style={{padding: '0px'}} className="nopad">
-            <ProjectWrapper>
+            <ExperienceWrapper>
                 <ImageWrapper>
                     <Image src={props.experience.image[0]} />
                     <DetailWrapper>
-                        <Title>Royal Bank of Canada</Title>
-                        <Description>Backend Developer</Description>
+                        <Title>{props.experience.company}</Title>
+                        <Description>{props.experience.title}</Description>
+                        <Date>{props.experience.date}</Date>
                     </DetailWrapper>
                 </ImageWrapper>
-                
-            </ProjectWrapper>
+                <BulletWrapper>
+                    {props.experience.bullets.map((bullet) => {
+                        return(
+                            <Li>{bullet}</Li>
+                        )
+                    })}
+                </BulletWrapper>
+                <TagsContainer>
+                    {props.experience.tags.map((tag) => {
+                        return(
+                            <Tag>{tag}</Tag>
+                        )
+                    })}
+                </TagsContainer>
+            </ExperienceWrapper>
         </Card>
         </OuterWrapper>
     )
@@ -33,13 +47,14 @@ const OuterWrapper = styled.div`
     margin: 15px 20px 15px 20px; 
 `
 
-const ProjectWrapper = styled.div`
+const ExperienceWrapper = styled.div`
     min-width: 200px;
     max-width: 400px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 20px;
 `
 
 const ImageWrapper = styled.div`
@@ -49,9 +64,7 @@ const ImageWrapper = styled.div`
     min-height: 100px;
     max-height: 200px;
     display: flex;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 `
 
@@ -59,6 +72,7 @@ const DetailWrapper = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 200px;
 `
 
 const Image = styled.img`
@@ -84,6 +98,24 @@ const Description = styled.p`
     padding-top: 15px;
     line-height: 25px;
     color: white;
+`
+
+const Date = styled.p`
+    font-family: 'Montserrat';
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+`
+
+const BulletWrapper = styled.div`
+    padding: 15px;
+`
+
+const Li = styled.p`
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: white;
+    padding-bottom: 5px;
 `
 
 const Container = styled.div`
