@@ -28,7 +28,7 @@ const projects = [
         ],
         image: [hyred],
         code: 'https://github.com/dart-dinosaurs/hyred',
-        project: ''
+        project: 'https://www.youtube.com/watch?v=vw_pRcdN08k'
     },
     {
         name: 'Java Mock Shell',

@@ -1,6 +1,7 @@
 import git from '../images/git.png'
 import jira from '../images/jira.png'
 import postman from '../images/postman.png'
+import swagger from '../images/swagger.png'
 
 const tools = [
     {
@@ -18,6 +19,12 @@ const tools = [
         logo: jira,
         sub: 'Work Management Tool'
     },
+    {
+        name: 'Swagger',
+        logo: swagger,
+        sub: 'API Documentation'
+    },
+
 ]
 
 export default tools
