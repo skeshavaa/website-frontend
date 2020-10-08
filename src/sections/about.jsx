@@ -6,7 +6,7 @@ import { GithubOutlined } from '@ant-design/icons'
 
 const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Profile />
             <AboutInfo />
         </Wrapper>
@@ -23,4 +23,5 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 70px;    
 `

@@ -14,8 +14,8 @@ function App() {
       <Landing />
       <About />
       <Skills />
-      <Projects />
       <Experience />
+      <Projects />
     </div>
   );
 }

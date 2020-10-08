@@ -6,10 +6,10 @@ const Navbar = () => {
     return (
         <NavContainer>
             <Items>
-                <Item>About</Item>
-                <Item>Skills</Item>
-                <Item>Experience</Item>
-                <Item>Contact</Item>
+                <Item href="#about">About</Item>
+                <Item href="#skills">Skills</Item>
+                <Item href="#experience">Experience</Item>
+                <Item href="#projects">Projects</Item>
             </Items>
         </NavContainer>
     )
@@ -25,14 +25,16 @@ const NavContainer = styled.div`
     width: 100%;
     justify-content: flex-end;
     align-content: center;
-    @import "wealthsimple-fabric/scss/fabric";
+    position: sticky;
+    top: 0;
+    z-index: 5;
 `
 
 const Items = styled.div`
     display: flex;
 `
 
-const Item = styled.h1`
+const Item = styled.a`
     font-size: 15px;
     color: white;
     padding: 20px 20px 20px 10px;

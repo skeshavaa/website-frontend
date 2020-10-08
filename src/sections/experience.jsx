@@ -6,7 +6,7 @@ import experience from '../data/experience'
 const Experience = () => {
 
     return (
-        <OuterWrapper>
+        <OuterWrapper id="experience">
             <Heading>Experience</Heading>
             <ExperienceWrapper>
             {experience.map((exp) => {
@@ -25,6 +25,7 @@ const OuterWrapper = styled.div`
     width: 100%;
     padding: 20px;
     background-color: #131313;
+    padding-top: 70px;
 `
 
 const Heading = styled.div`

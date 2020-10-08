@@ -8,7 +8,7 @@ import tools from '../data/Tools.js'
 
 function Skills() {
     return (
-        <Wrapper>
+        <Wrapper id="skills">
             <Heading>Frontend</Heading>
             <Row>
             {frontEnd.map((skill) => {
@@ -51,6 +51,7 @@ export default Skills
 const Wrapper = styled.div`
     background: #131313;
     padding: 25px;
+    padding-top: 70px;
 `
 
 const Row = styled.div`

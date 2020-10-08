@@ -6,7 +6,7 @@ import projects from '../data/projects'
 const Projects = () => {
 
     return (
-        <OuterWrapper>
+        <OuterWrapper id="projects">
             <Heading>Projects</Heading>
                 <ProjectWrapper>
                 {projects.map((project) => {
@@ -24,6 +24,7 @@ export default Projects
 const OuterWrapper = styled.div`
     width: 100%;
     padding: 20px;
+    padding-top: 70px;
     background-color: #1a1a1a;
 `
 
