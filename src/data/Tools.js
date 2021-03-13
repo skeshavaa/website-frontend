@@ -2,6 +2,7 @@ import git from '../images/git.png'
 import jira from '../images/jira.png'
 import postman from '../images/postman.png'
 import swagger from '../images/swagger.png'
+import docker from '../images/docker.png'
 
 const tools = [
     {
@@ -23,6 +24,11 @@ const tools = [
         name: 'Swagger',
         logo: swagger,
         sub: 'API Documentation'
+    },
+    {
+        name: 'Docker',
+        logo: docker,
+        sub: 'Deployment'
     },
 
 ]

@@ -1,7 +1,26 @@
 import validus from '../images/validus.png'
 import rbc from '../images/rbc.png'
+import mlh from '../images/mlh.jpg'
 
 const experience = [
+    {
+        company: 'Major League Hacking',
+        title: 'Fellow',
+        date: 'Feb 2021 - Present',
+        bullets: [
+            'Built a CLI generator node package for developers to build fullstack web applications with over 200+ downloads',
+            'Developing a forum for Indie game developers to share content and generate discussions about various indie games',
+            'Selected as one of the 180 fellows from 30k+ applicants'
+        ],
+        tags: [
+            'React',
+            'Django',
+            'MongoDB',
+            'Firebase',
+            'Docker',
+        ],
+        image: [mlh]
+    },
     {
         company: 'Royal Bank of Canada',
         title: 'Backend Developer',
